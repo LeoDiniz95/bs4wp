@@ -57,6 +57,17 @@ register_sidebar(
         'after_title'       => '</h5><div class="card-body">',
 ));
 
+// Criando form de busca
+register_sidebar(
+    array(
+        'name'              => 'Busca',
+        'id'                => 'busca',
+        'before_widget'     => '<div class="blog-search">',
+        'after_widget'      => '</div>',
+        'before_title'      => '<h5>',
+        'after_title'       => '</h5>',
+));
+
 // Ativar o formulário para respostas no comentários
 function theme_queue_js(){
 

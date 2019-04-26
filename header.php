@@ -31,17 +31,8 @@
           <!--  Pesquisa  -->
           <div class="col-md-4 col-sm-12">
 
-            <form>
-
-              <div class="input-group">
-
-                <input type="text" class="form-control" placeholder="Procura algo?">
-                <div class="input-group-append">
-                  <button class="btn btn-my-color-2" type="button">Buscar</button>
-                </div>
-              </div>
-
-            </form>
+            <?php //Adicionando o formulário de busca
+              dynamic_sidebar( 'Busca' ); ?>
 
           </div>
 
