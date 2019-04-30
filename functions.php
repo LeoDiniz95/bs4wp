@@ -1,11 +1,17 @@
 <?php
 
 
-//Chamar a tag title
-function bs4wp_title_tag(){
+//Chamar a tag title e adicionando os formatos de posts
+function bs4wp_theme_support(){
+
+    // Chamar a tag title
     add_theme_support('title-tag');
+
+    // Adicionar os formatos de posts
+    add_theme_support( 'post-formats' , array( 'aside' , 'image' ) );
+
 }
-add_action('after_setup_theme','bs4wp_title_tag');
+add_action('after_setup_theme','bs4wp_theme_support');
 
 //Prevenção de erros na tag Title em versões antigas
 if(!function_exists('_wp_render_title_tag')) {
