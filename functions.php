@@ -111,4 +111,7 @@ function format_comment($comment, $args, $depth) {
     <?php
 }
 
+// Incluindo funções de personalização
+require get_template_directory().'/inc/customizer.php';
+
 ?>

@@ -24,8 +24,8 @@
 
           <!--  TÍTULO  -->
           <div class="col-md-8 col-sm-12">
-            <h1>Tema</h1>
-            <p class="lead">com Wordpress</p>
+            <h1><?php bloginfo( 'name' ); ?></h1>
+            <p class="lead"><?php bloginfo( 'description' ); ?></p>
           </div>
 
           <!--  Pesquisa  -->

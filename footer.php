@@ -3,8 +3,8 @@
       <div class="container">
         <div class="row">
           <div class="col py-5 text-center text-white">
-            <h5>Tema de Wordpress</h5>
-            <p class="mb-0">Feito por alguém que gosta de coisas que outras pessoas não gostam.</p>
+            <h5><?php echo get_theme_mod( 'footer_title', 'Meu tema' ); ?></h5>
+            <p class="mb-0"><?php echo get_theme_mod( 'footer_text', 'Feito por alguém que gosta de coisas que outras pessoas não gostam' ); ?></p>
           </div>
         </div>
       </div>
