@@ -114,6 +114,27 @@ function format_comment($comment, $args, $depth) {
     <?php
 }
 
+// Criando o tipo de post para o banner
+function create_post_type() {
+    register_post_type('banners',
+    // Definindo as opções
+    array(
+        'labels' => array(
+            'name' => __('Banners'),
+            'singular_name' => __('Banners')
+        ),
+        'supports' => array(
+            'title', 'editor', 'thumbnail'
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-images-alt2',
+        'rewrite' => array('slug' => 'banners'),
+    ));
+}
+// Iniciando o create_post_type
+add_action( 'init', 'create_post_type' );
+
 // Incluindo funções de personalização
 require get_template_directory().'/inc/customizer.php';
 
